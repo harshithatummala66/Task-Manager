@@ -20,13 +20,4 @@ mongoose.connect(process.env.MONGO_URI)
   .catch(err => console.log(err));
 
 const PORT = process.env.PORT || 5000;
-const path = require('path');
-
-// This code tells Express to serve the React files in production
-if (process.env.NODE_ENV === 'production') {
-  app.use(express.static(path.join(__dirname, '../client/dist')));
-  app.get('/{*path}', (req, res) =>
-  res.sendFile(path.resolve(__dirname, '../', 'client', 'dist', 'index.html'))
-);
-}
 app.listen(PORT, () => console.log(`Server running on port ${PORT}`));
