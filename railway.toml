@@ -1,5 +1,12 @@
+<<<<<<< HEAD
 [build]
 watchPatterns = ["server/**"]
 
 [deploy]
+=======
+[build]
+watchPatterns = ["server/**"]
+
+[deploy]
+>>>>>>> c7c79f83b9ea2a9441f404964b22d40eb15a741f
 startCommand = "cd server && npm install && node index.js"
