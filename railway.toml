@@ -2,4 +2,4 @@
 watchPatterns = ["server/**"]
 
 [deploy]
-startCommand = "cd server && npm install && node server.js"
+startCommand = "cd server && npm install && node index.js"
